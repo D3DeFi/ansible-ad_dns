@@ -137,8 +137,8 @@ class SambaToolDNS(object):
         self.zone = self.module.params['zone']
         self.cmdb = [self.smbtool, 'dns']
         self.cmdc = [
-            "--username={}".format(self.module.params['username']),
-            "--password='{}'".format(self.module.params['password'])
+            "--username=\'{}\'".format(self.module.params['username']),
+            "--password=\'{}\'".format(self.module.params['password'])
         ]
 
 
